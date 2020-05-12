@@ -1,0 +1,6 @@
+<div class="sidebar">
+<app-list-view [nodes]="categories" [myCallback]="loadSubCategories.bind(this)"></app-list-view>
+</div>
+
+
+<p *ngIf="!categories">LoadingCategories</p>
